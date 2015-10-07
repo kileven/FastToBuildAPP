@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_guid"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">    
+    </android.support.v4.view.ViewPager>
+    <com.viewpagerindicator.CirclePageIndicator
+        android:id="@+id/vp_indicator"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:fillColor="#f00"
+        android:padding="20dp"
+        app:pageColor="@android:color/darker_gray"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        app:radius="7dp"
+        app:strokeWidth="0dp">
+    </com.viewpagerindicator.CirclePageIndicator>
+    
+    <Button 
+        android:id="@+id/btn_start"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="开始体验"
+        android:layout_above="@id/vp_indicator"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        android:padding="15dp"
+        android:textSize="22dp"/>
+    
+</RelativeLayout>

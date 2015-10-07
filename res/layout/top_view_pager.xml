@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.lenuy.fasttobuildapp.view.MyTopViewPager
+        android:id="@+id/vp_top"
+        android:layout_height="200dp"
+        android:layout_width="match_parent"/>
+    <RelativeLayout 
+	        android:layout_alignParentBottom="true"
+	        android:layout_height="wrap_content"
+	        android:layout_width="match_parent"
+	        android:padding="3dp"
+	        android:background="#a000">
+	        <TextView
+	            android:id="@+id/tv_titles"
+	            android:layout_height="wrap_content"
+	            android:layout_width="wrap_content"
+	            android:textColor="#fff"
+	            android:text="title1"/>
+	        <com.viewpagerindicator.CirclePageIndicator
+		        android:id="@+id/circle_indicator"
+		        android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"
+		        android:layout_alignParentRight="true"
+		        app:fillColor="#f00"
+		        android:padding="10dp"
+		        app:pageColor="@android:color/darker_gray"
+		        app:radius="3dp"
+		        app:strokeWidth="0dp"/>
+	    </RelativeLayout>
+</RelativeLayout>
